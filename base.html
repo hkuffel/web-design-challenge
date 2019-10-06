@@ -26,8 +26,8 @@
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                     <a class="dropdown-item" href="temp.html">Temperature</a>
                     <a class="dropdown-item" href="wind.html">Wind Speed</a>
-                    <a class="dropdown-item" href="humid.html">Humidity</a>
-                    <a class="dropdown-item" href="cloud.html">Cloudiness</a>
+                    <a class="dropdown-item" href="humid.html">viz3</a>
+                    <a class="dropdown-item" href="cloud.html">viz4</a>
                     </div>
                 </li>
                 <li class="nav-item active">
@@ -39,53 +39,8 @@
                 </ul>
             </div>
         </nav>
-
-        <div class="jumbotron jumbotron-fluid">
-            <div class="container">
-                <h1 class="display-4">Wind Speed By Latitude</h1>
-            </div>
-        </div>
-
-        <div class="container">
-            <img src="Resources/assets/images/Wind_Lat.png" alt="wind speed">
-
-            <div class="row">
-                <div class="col-md-4">
-                    <div class="card mb-3">
-                        <div class="card-body">
-                        <h5 class="card-title" style="text-align: center">Cloudiness by Latitude</a></h5>
-                        </div>
-                        <img style="height: 200px; width: 100%; display: block;" src="Resources/assets/images/Cloud_Lat.png" alt="cloudiness">
-                        <div class="card-footer text-muted" style="text-align: center">
-                            <a href="cloud.html" class="card-link">See More</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="card mb-3">
-                        <div class="card-body">
-                        <h5 class="card-title" style="text-align: center">Temperature by Latitude</a></h5>
-                        </div>
-                        <img style="height: 200px; width: 100%; display: block;" src="Resources/assets/images/Temp_Lat.png" alt="temperature">
-                        <div class="card-footer text-muted" style="text-align: center">
-                            <a href="temp.html" class="card-link">See More</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="card mb-3">
-                        <div class="card-body">
-                        <h5 class="card-title" style="text-align: center">Humidity by Latitude</a></h5>
-                        </div>
-                        <img style="height: 200px; width: 100%; display: block;" src="Resources/assets/images/Humidity_Lat.png" alt="humidity">
-                        <div class="card-footer text-muted" style="text-align: center">
-                            <a href="humid.html" class="card-link">See More</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-        </div>
+        
+        {% block content %}{% endblock %}
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
